@@ -164,7 +164,7 @@ Feel free to open an issue or submit a pull request.
 
 ## Example App
 
-Check out the [example](example/) directory for a complete working app.
+Check out the [example](https://github.com/sajibsaha4647/background_permission_checker.git) directory for a complete working app.
 
 ## License
 
@@ -176,5 +176,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you find this package helpful, please give it a ⭐ on [GitHub](https://github.com/sajibsaha4647)!
+If you find this package helpful, please give it a ⭐ on [GitHub](https://github.com/sajibsaha4647/background_permission_checker.git)!
 EOF
