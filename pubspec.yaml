@@ -1,6 +1,6 @@
 name: background_permission_checker
 description: "A plugin to check auto-start permission and open settings"
-version: 0.0.1
+version: 1.0.1
 homepage: "https://github.com/sajibsaha4647/background_permission_checker.git"
 
 environment:

@@ -6,35 +6,24 @@ background_permission_checker
 📌 Overview
 
 Android manufacturers like Xiaomi, Oppo, Vivo, Realme, Huawei, and Samsung often block apps from running background tasks unless Auto-Start is enabled.
-
 This plugin allows you to:
-
 Detect if Auto-Start is enabled
-
 Open the correct Auto-Start settings screen depending on the device brand
-
 Improve reliability for apps requiring background services (GPS, notifications, VoIP, chat, delivery apps, etc.)
 
 ✨ Features
 
 ✔ Check Auto-Start permission status
-
 🔧 Open Auto-Start settings automatically
 
 📱 Supports:
 
 Xiaomi (MIUI)
-
 Oppo (ColorOS)
-
 Vivo (Funtouch OS)
-
 Realme
-
 Huawei (EMUI)
-
 Samsung
-
 Others (fallback to App Settings)
 
 ⚡ Works with Android 6+
@@ -44,28 +33,30 @@ Others (fallback to App Settings)
 📦 Installation
 
 Add to your pubspec.yaml:
-
+````
 dependencies:
 background_permission_checker: ^0.0.1
-
-
+````
+````
 Install:
 
 flutter pub get
-
+````
 
 Import:
-
+````
 import 'package:background_permission_checker/background_permission_checker.dart';
-
+````
 🚀 Quick Usage
 ✔ Check Auto-Start Permission
+````
 final bool isEnabled = await BackgroundChecker.isAutoStartEnabled();
 print("Auto-start status: $isEnabled");
-
+````
 ✔ Open Auto-Start Settings
+````
 await BackgroundChecker.openAutoStartSettings();
-
+````
 📱 OEM Behavior Table
 Brand	Opens	Notes
 Xiaomi	Auto-Start Management	MIUI restricts background apps heavily
@@ -76,19 +67,21 @@ Realme	Auto Launch	Same as ColorOS
 Samsung	App Info → Battery	Limited auto-start APIs
 Others	App Settings	Fallback screen
 🔧 Dart API Reference
+````
 1. isAutoStartEnabled()
-
+````
 Returns true if Auto-Start permission is enabled.
-
+````
 bool enabled = await BackgroundChecker.isAutoStartEnabled();
 
 2. openAutoStartSettings()
-
+````
 Opens OEM-specific Auto-Start settings.
-
+````
 await BackgroundChecker.openAutoStartSettings();
-
+````
 📝 Example
+````
 import 'package:flutter/material.dart';
 import 'package:background_permission_checker/background_permission_checker.dart';
 
@@ -120,21 +113,16 @@ child: Text("Open Auto-Start Settings"),
 );
 }
 }
-
+````
 🧠 Why Use This Plugin?
 
 Many apps depend on background tasks:
 
 Delivery tracking
-
 Ride-sharing
-
 Messaging
-
 VoIP calling
-
 GPS/location
-
 OTP listeners
 
 Health/fitness trackers
@@ -145,13 +133,9 @@ This plugin solves that problem.
 🛠️ Roadmap
 
 Battery Optimization Detector
-
 Background Data Restriction Check
-
 Vendor Detection API
-
 Deep Link to Battery Settings
-
 Example app with UI
 
 🤝 Contributing
